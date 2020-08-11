@@ -6,14 +6,16 @@ import './ProductList.css';
 
 const ProductList = () => {
 	const data = useSelector((state) => state.data);
-	console.log(data);
+	const cart = useSelector((state) => state.cart.items);
+
+	
 	return (
 		<div className="ProductList">
 			<h1>Shoply</h1>
 			<section className="ProductList-Products">
 				{Object.keys(data.products).map((p) => (
 					<ProductCard id={p} data={data.products[p]}>
-						<AddRemoveItemButton id={p} />
+						<AddRemoveItemButton id={p} cart={cart} />
 					</ProductCard>
 				))}
 			</section>
