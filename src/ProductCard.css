@@ -3,10 +3,19 @@
 	width: 300px;
 	height: 500px;
 	border: 2px solid black;
+	margin-bottom: 1rem;
+	border-radius: 3px;
+	padding: 0.5rem;
+}
+
+.ProductCard-ImageContainer {
+	position: relative;
+	width: 300px;
+	height: 300px;
 }
 
 .ProductCard img {
 	position: relative;
 	max-width: 100%;
-	height: auto;
+	max-height: 300px;
 }

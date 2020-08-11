@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import ProductCard from './ProductCard';
+import './ProductList.css';
 
 const ProductList = () => {
 	const data = useSelector((state) => state.data);
