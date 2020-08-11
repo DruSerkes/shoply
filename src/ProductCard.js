@@ -2,7 +2,7 @@ import React from 'react';
 import './ProductCard.css';
 import upperfirst from 'lodash.upperfirst';
 
-const ProductCard = ({ id, data }) => {
+const ProductCard = ({ id, data, children }) => {
 	return (
 		<div className="ProductCard" key={id} id={id}>
 			<div className="ProductCard-ImageContainer">
@@ -11,6 +11,7 @@ const ProductCard = ({ id, data }) => {
 			<h4>{upperfirst(data.name)}</h4>
 			<p>Price: ${data.price}</p>
 			<p>{data.description}</p>
+			{children}
 		</div>
 	);
 };
