@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import ProductCard from './ProductCard';
 
 const ProductList = () => {
 	const data = useSelector((state) => state.data);
@@ -8,7 +9,7 @@ const ProductList = () => {
 		<div className="ProductList">
 			<h1>Shoply</h1>
 			<section className="ProductList-Products">
-				{data.products.map((p) => <ProductCard id={p} data={data.products[p]} />)}
+				{Object.keys(data.products).map((p) => <ProductCard id={p} data={data.products[p]} />)}
 			</section>
 		</div>
 	);
