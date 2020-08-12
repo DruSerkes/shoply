@@ -1,0 +1,26 @@
+.AddRemoveItemButton {
+	border: 1px solid green;
+	background-color: green;
+	width: 40%;
+	margin: 0 auto;
+	padding: 0;
+	border-radius: 12px;
+}
+
+.AddRemoveItemButton button {
+	border-radius: 10px;
+	width: 42%;
+	height: 100%;
+	outline: none;
+	border: none;
+	margin: 0;
+	background-color: green;
+}
+
+.AddRemoveItemButton button:hover {
+	box-shadow: -2px -2px 1px;
+}
+
+.AddRemoveItemButton span {
+	width: 10%;
+}

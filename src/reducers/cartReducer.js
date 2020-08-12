@@ -3,8 +3,6 @@ const INITIAL_STATE = { items: [], totalItems: 0 };
 export default function cartReducer(state = INITIAL_STATE, action) {
 	switch (action.type) {
 		case 'ADD_TO_CART':
-			// console.log('id === ', action.id);
-			// console.log('ADDING === ', [ ...state.items, action.id ]);
 			let items = [ ...state.items, action.id ];
 			let totalItems = items.length;
 			return { ...state, items, totalItems };

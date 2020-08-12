@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart, removeFromCart } from './reducers/actions';
+import './AddRemoveItemButton.css';
 
 const AddRemoveItemButton = ({ id, items }) => {
 	const [ count, setCount ] = useState(0);
