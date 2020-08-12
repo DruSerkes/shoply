@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import ProductCard from './ProductCard';
 import AddRemoveItemButton from './AddRemoveItemButton';
-
 import './ProductList.css';
+
 
 const ProductList = () => {
 	const data = useSelector((state) => state.data);
