@@ -1,5 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import ProductCard from './ProductCard';
+import Total from './Total';
 
 const Cart = () => {
 	const products = useSelector((state) => state.data.products);
@@ -8,7 +11,18 @@ const Cart = () => {
 	const uniqueItems = new Set(cart.items);
 	console.log('uniqueItems === ', uniqueItems);
 
-	return <h1>Testing</h1>;
+	return (
+		<div className="Cart">
+			<h1>Cart</h1>
+			<Total products={products} />
+			<div className="Cart-Container">
+				{Array.from(uniqueItems).map((item) => <ProductCard id={item} data={products[item]} />)}
+			</div>
+			<Link to="/">
+				<button>Go Back</button>
+			</Link>
+		</div>
+	);
 };
 
 export default Cart;
