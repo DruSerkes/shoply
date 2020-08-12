@@ -1,13 +1,12 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, shallowEqual } from 'react-redux';
 import ProductCard from './ProductCard';
 import AddRemoveItemButton from './AddRemoveItemButton';
 import './ProductList.css';
 
-
 const ProductList = () => {
-	const data = useSelector((state) => state.data);
-	const cart = useSelector((state) => state.cart);
+	const data = useSelector((state) => state.data, shallowEqual);
+	const cart = useSelector((state) => state.cart, shallowEqual);
 	return (
 		<div className="ProductList">
 			<h1>Shoply</h1>

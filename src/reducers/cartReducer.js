@@ -1,5 +1,6 @@
-const INITIAL_STATE = { items: [], totalItems: 0 };
 import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART } from './actionTypes';
+
+const INITIAL_STATE = { items: [], totalItems: 0 };
 
 export default function cartReducer(state = INITIAL_STATE, action) {
 	switch (action.type) {
