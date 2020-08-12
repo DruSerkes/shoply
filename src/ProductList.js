@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
-import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import Total from './Total';
 import './ProductList.css';
