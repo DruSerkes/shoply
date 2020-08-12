@@ -1,17 +1,20 @@
-const INITIAL_STATE = { items: [] };
+const INITIAL_STATE = { items: [], totalItems: 0 };
 
 export default function cartReducer(state = INITIAL_STATE, action) {
 	switch (action.type) {
 		case 'ADD_TO_CART':
-			// return { ...state, items: [ ...state.items, action.id ] };
-			return [ ...state.items, action.id ];
+			// console.log('id === ', action.id);
+			// console.log('ADDING === ', [ ...state.items, action.id ]);
+			let items = [ ...state.items, action.id ];
+			let totalItems = items.length;
+			return { ...state, items, totalItems };
 		case 'REMOVE_FROM_CART':
 			let idxToRemove = state.items.indexOf(action.id);
-			let items = state.items.slice(0, idxToRemove).concat(state.items.slice(idxToRemove + 1));
-			// return { ...state, items };
-			return items;
+			let updatedItems = state.items.slice(0, idxToRemove).concat(state.items.slice(idxToRemove + 1));
+			let updatedTotalItems = updatedItems.length;
+			return { ...state, items: updatedItems, totalItems: updatedTotalItems };
 		case 'CLEAR_CART':
-			return (state.items = []);
+			return { ...state, items: [], totalItems: 0 };
 		default:
 			return state;
 	}
