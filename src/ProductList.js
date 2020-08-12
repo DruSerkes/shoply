@@ -13,11 +13,7 @@ const ProductList = () => {
 			<h1>Shoply</h1>
 			<Total products={data.products} />
 			<section className="ProductList-Products">
-				{Object.keys(data.products).map((p) => (
-					<Link key={p} to={`/products/${p}`}>
-						<ProductCard id={p} data={data.products[p]} />
-					</Link>
-				))}
+				{Object.keys(data.products).map((p) => <ProductCard id={p} data={data.products[p]} />)}
 			</section>
 		</div>
 	);

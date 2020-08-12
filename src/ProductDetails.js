@@ -24,7 +24,6 @@ const ProductDetails = () => {
 					</p>
 					<h4>Product Details</h4>
 					<p>{item.description}</p>
-					{/* <AddRemoveItemButton id={id} /> */}
 					<Link to="/">
 						<button>Go Back</button>
 					</Link>
