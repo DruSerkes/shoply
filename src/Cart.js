@@ -7,9 +7,7 @@ import Total from './Total';
 const Cart = () => {
 	const products = useSelector((state) => state.data.products);
 	const cart = useSelector((state) => state.cart);
-	console.log('cart === ', cart);
 	const uniqueItems = new Set(cart.items);
-	console.log('uniqueItems === ', uniqueItems);
 
 	return (
 		<div className="Cart">
