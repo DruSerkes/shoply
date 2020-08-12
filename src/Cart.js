@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import Total from './Total';
+import './Cart.css';
 
 const Cart = () => {
 	const products = useSelector((state) => state.data.products);
@@ -16,7 +17,7 @@ const Cart = () => {
 			<div className="Cart-Container">
 				{Array.from(uniqueItems).map((item) => <ProductCard id={item} data={products[item]} />)}
 			</div>
-			<Link to="/">
+			<Link to="/" className="GO-BACK">
 				<button>Go Back</button>
 			</Link>
 		</div>
