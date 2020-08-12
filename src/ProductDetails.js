@@ -3,15 +3,17 @@ import { Link, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import AddRemoveItemButton from './AddRemoveItemButton';
 import upperfirst from 'lodash.upperfirst';
+import Total from './Total';
 import './ProductDetails.css';
 
 const ProductDetails = () => {
 	const { id } = useParams();
-	const item = useSelector((state) => state.data.products[id]);
-
+	const products = useSelector((state) => state.data.products);
+	const item = products[id];
 	return (
 		<div className="ProductDetails">
 			<h1>{upperfirst(item.name)}</h1>
+			<Total products={products} />
 			<div className="ProductDetails-Container">
 				<div className="ProductDetails-Left">
 					<img src={item.image_url} alt={item.name} />
