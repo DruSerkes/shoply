@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProductCard.css';
 import upperfirst from 'lodash.upperfirst';
+import AddRemoveItemButton from './AddRemoveItemButton';
 
 const ProductCard = ({ id, data, children }) => {
 	return (
@@ -11,7 +12,8 @@ const ProductCard = ({ id, data, children }) => {
 			<h4>{upperfirst(data.name)}</h4>
 			<p>Price: ${data.price}</p>
 			<p>{data.description}</p>
-			{children}
+			{/* {children} */}
+			<AddRemoveItemButton id={id} />
 		</div>
 	);
 };
