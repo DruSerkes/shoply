@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
+import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import Total from './Total';
 import './ProductList.css';
@@ -12,7 +13,11 @@ const ProductList = () => {
 			<h1>Shoply</h1>
 			<Total products={data.products} />
 			<section className="ProductList-Products">
-				{Object.keys(data.products).map((p) => <ProductCard id={p} data={data.products[p]} />)}
+				{Object.keys(data.products).map((p) => (
+					<Link key={p} to={`/products/${p}`}>
+						<ProductCard id={p} data={data.products[p]} />
+					</Link>
+				))}
 			</section>
 		</div>
 	);

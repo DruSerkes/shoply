@@ -1,16 +1,18 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import ProductDetails from './ProductDetails';
+import ProductList from './ProductList';
 
 const Routes = () => {
 	return (
 		<Switch>
-			<Route path="products/:id">
+			<Route exact path="/products/:id">
 				<ProductDetails />
 			</Route>
-			<Route path="/">
+			<Route exact path="/">
 				<ProductList />
 			</Route>
-			<Redirect path="/" />
+			<Redirect to="/" />
 		</Switch>
 	);
 };
