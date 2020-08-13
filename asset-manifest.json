@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shoply/static/css/main.de5ed876.chunk.css",
+    "main.js": "/shoply/static/js/main.b844b03e.chunk.js",
+    "main.js.map": "/shoply/static/js/main.b844b03e.chunk.js.map",
+    "runtime-main.js": "/shoply/static/js/runtime-main.4bd548d9.js",
+    "runtime-main.js.map": "/shoply/static/js/runtime-main.4bd548d9.js.map",
+    "static/js/2.e31d519a.chunk.js": "/shoply/static/js/2.e31d519a.chunk.js",
+    "static/js/2.e31d519a.chunk.js.map": "/shoply/static/js/2.e31d519a.chunk.js.map",
+    "index.html": "/shoply/index.html",
+    "precache-manifest.cbeeb3b0a99397406ef3a2366f251ae6.js": "/shoply/precache-manifest.cbeeb3b0a99397406ef3a2366f251ae6.js",
+    "service-worker.js": "/shoply/service-worker.js",
+    "static/css/main.de5ed876.chunk.css.map": "/shoply/static/css/main.de5ed876.chunk.css.map",
+    "static/js/2.e31d519a.chunk.js.LICENSE.txt": "/shoply/static/js/2.e31d519a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bd548d9.js",
+    "static/js/2.e31d519a.chunk.js",
+    "static/css/main.de5ed876.chunk.css",
+    "static/js/main.b844b03e.chunk.js"
+  ]
+}
