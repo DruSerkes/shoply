@@ -1,0 +1,27 @@
+.Navbar {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	background-color: green;
+	padding: 0.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Navbar img {
+	max-width: 30px;
+	height: auto;
+	border-radius: 50%;
+}
+
+.Navbar .Total {
+	color: white;
+	text-decoration: none;
+}
+
+.Navbar a {
+	padding: 0;
+}
