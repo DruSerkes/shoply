@@ -18,10 +18,10 @@ const Total = ({ products }) => {
 	return (
 		<Link to="/cart">
 			<p className="Total">
-				<b>Cart Total: ${total.toFixed(2)}</b>
+				<b>Cart Total: ${total.toFixed(2)} </b>
 				<span>
-					<i class="fas fa-shopping-cart" />
-					<span class="Total-Badge">{cart.totalItems}</span>
+					<i className="fas fa-shopping-cart" />
+					<span className="Total-Badge">{cart.totalItems}</span>
 				</span>
 			</p>
 		</Link>

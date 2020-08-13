@@ -15,7 +15,7 @@ const Cart = () => {
 			<h1>Cart</h1>
 			<Total products={products} />
 			<div className="Cart-Container">
-				{Array.from(uniqueItems).map((item) => <ProductCard id={item} data={products[item]} />)}
+				{Array.from(uniqueItems).map((item) => <ProductCard id={item} key={item} data={products[item]} />)}
 			</div>
 			<Link to="/" className="GO-BACK">
 				<button>Go Back</button>

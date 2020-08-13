@@ -12,7 +12,7 @@ const ProductList = () => {
 			<h1>Shoply</h1>
 			<Total products={data.products} />
 			<section className="ProductList-Products">
-				{Object.keys(data.products).map((p) => <ProductCard id={p} data={data.products[p]} />)}
+				{Object.keys(data.products).map((p) => <ProductCard id={p} key={p} data={data.products[p]} />)}
 			</section>
 		</div>
 	);
