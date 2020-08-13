@@ -2,6 +2,8 @@
 
 First pass at a mock e-commerce website. 
 
+[Live Demo](http://druserkes.github.io/shoply)
+
 Built with React / Redux
 
 
